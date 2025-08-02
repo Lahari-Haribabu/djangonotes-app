@@ -71,11 +71,6 @@ cp .env.example .env   # or create manually
 docker compose up --build
 ````
 
-The application will be accessible at:
-🌐 `http://localhost:8000` *(or EC2 IP if hosted remotely)*
-
----
-
 ### 📂 .env File Example
 
 Create a `.env` file in the root directory:
