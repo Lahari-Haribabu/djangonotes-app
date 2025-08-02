@@ -114,7 +114,7 @@ DB_PORT=3306
 ## 🙋‍♀️ Author
 
 **Lahari Haribabu**
-🚀 Passionate about backend, DevOps, and building scalable applications.
+🚀 Passionate about DevOps, and building scalable applications.
 📬 [Connect on LinkedIn](https://www.linkedin.com/in/lahari-haribabu)
 
 ---
