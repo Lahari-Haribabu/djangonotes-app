@@ -124,12 +124,6 @@ DB_PORT=3306
 
 ---
 
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-
 ## ⭐️ Show your support!
 
 If you like this project:
