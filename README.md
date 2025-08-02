@@ -3,8 +3,7 @@
 ```markdown
 # 📝 Django Notes App
 
-A fully functional **Notes Web Application** built using Django and Docker, designed for simplicity, clean architecture, and production-readiness. This project demonstrates containerized Django development with MySQL integration using Docker Compose.
-
+Deploying a web Application with Nginx and mysql
 ---
 
 ## 🚀 Features
