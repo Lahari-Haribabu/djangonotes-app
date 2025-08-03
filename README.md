@@ -75,12 +75,7 @@ A simple notes application for learning full-stack Dockerized app deployment.
 
 ---
 
-## 🧠 Languages Used
 
-* JavaScript – 48.3%
-* CSS – 46.9%
-* Python – 4.0%
-* Others – 0.8%
 
----
+
 
