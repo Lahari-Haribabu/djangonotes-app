@@ -1,131 +1,86 @@
 
+## 📦 Requirements
 
-```markdown
-# 📝 Django Notes App
-
-Deploying a web Application with Nginx and mysql
----
-
-## 🚀 Features
-
-- ✍️ Create, update, and delete notes
-- 📁 Organize notes by title and timestamp
-- 🐳 Dockerized for easy setup and deployment
-- 🔄 Persistent MySQL database using volumes
-- 🔐 Environment-variable-based configuration
-- 🚀 Gunicorn as a production-ready WSGI server
+* Python 3.9
+* Node.js
+* React
 
 ---
 
-## 🛠 Tech Stack
+## 🚀 Installation
 
-| Layer        | Technologies                |
-|-------------|-----------------------------|
-| Backend      | Django (Python)             |
-| Database     | MySQL                       |
-| Web Server   | Gunicorn                    |
-| Containerization | Docker, Docker Compose  |
-| Dev Tools    | Git, GitHub                 |
-
----
-
-## 📁 Project Structure
-
-```
-
-djangonotes-app/
-├── app/                     # Django project directory
-│   ├── notes/               # Django app for notes
-│   ├── manage.py
-├── Dockerfile               # Docker image build instructions
-├── docker-compose.yml       # Multi-container orchestration
-├── requirements.txt         # Python dependencies
-├── .env                     # Environment configuration
-└── README.md
-
-````
-
----
-
-## ⚙️ Getting Started
-
-### 🔧 Prerequisites
-
-- Docker & Docker Compose installed
-- Git installed
-
----
-
-### 🚀 Running the App
+### 1. Clone the repository
 
 ```bash
-# Clone the repository
 git clone https://github.com/Lahari-Haribabu/djangonotes-app.git
 cd djangonotes-app
+```
 
-# Create a .env file with database credentials
-cp .env.example .env   # or create manually
+### 2. Build the app with Docker
 
-# Build and run the app
-docker compose up --build
-````
+```bash
+docker build -t notes-app .
+```
 
-### 📂 .env File Example
+### 3. Run the app
 
-Create a `.env` file in the root directory:
-
-```env
-DB_NAME=notes_db
-DB_USER=root
-DB_PASSWORD=yourpassword
-DB_HOST=db
-DB_PORT=3306
+```bash
+docker run -d -p 8000:8000 notes-app:latest
 ```
 
 ---
 
-## 📦 Docker Details
+## 🌐 Set up Nginx (optional, for reverse proxy)
 
-* `web` container runs Django with Gunicorn
-* `db` container runs MySQL with persistent volume
-* MySQL data persists in `data/` volume even after container shutdown
+To expose the app publicly through port 80:
 
----
-
-## 🔐 Security & Environment
-
-* All sensitive credentials are stored in `.env` (never committed to Git)
-* `.gitignore` and `.dockerignore` ensure clean Git history and lean images
-
----
-
-## 📌 Future Enhancements
-
-* 🔑 User authentication and login
-* 🏷️ Tag-based note organization
-* 📱 API integration (Django REST Framework)
-* 🌐 Frontend with React or Bootstrap
-* ⚙️ CI/CD setup with GitHub Actions or Jenkins
-* ☁️ Deployment on AWS or other cloud platforms
-
----
-
-## 🙋‍♀️ Author
-
-**Lahari Haribabu**
-🚀 Passionate about DevOps, and building scalable applications.
-📬 [Connect on LinkedIn](https://www.linkedin.com/in/lahari-haribabu)
-
----
-
-## ⭐️ Show your support!
-
-If you like this project:
-
-* Star the repo ⭐
-* Fork it 🍴
-* Share it 📢
-
+```bash
+sudo apt-get update
+sudo apt install nginx
 ```
 
+Then configure Nginx as a reverse proxy pointing to `localhost:8000`.
+
+---
+
+## 📄 About
+
+A simple notes application for learning full-stack Dockerized app deployment.
+
+---
+
+## 🛠️ Resources
+
+* [`README`](#)
+* Docker
+* React
+* Django
+* Nginx
+
+---
+
+## 📊 GitHub Stats
+
+| Metric      | Count         |
+| ----------- | ------------- |
+| ⭐ Stars     | You decide 😉 |
+| 👀 Watchers | You decide 😉 |
+| 🍴 Forks    | You decide 😉 |
+
+---
+
+## 🤝 Contributors
+
+* [@Lahari-Haribabu](https://github.com/Lahari-Haribabu)
+
+---
+
+## 🧠 Languages Used
+
+* JavaScript – 48.3%
+* CSS – 46.9%
+* Python – 4.0%
+* Others – 0.8%
+
+---
 
